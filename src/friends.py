@@ -32,3 +32,11 @@ def l_money(loaner, loanee, loan_amount):
     print(loaner["monies"])
     print(loanee["monies"])
 
+def all_favourite_foods(people):
+    all_snacks=[]
+    for person in people:
+        for snack in person["favourites"]["snacks"]:
+            all_snacks.append(snack)
+    
+    return all_snacks
+
