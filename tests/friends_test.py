@@ -115,7 +115,7 @@ class TestFriends(unittest.TestCase):
   # 7. For two given people, allow the first person to loan a given value of money to the other
   # (hint: our function will probably need 3 arguments passed to it... the ler, the lee, and the amount for this function)
   # (hint2: You should test if both the ler's and the lee's money have changed, maybe two assertions?)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_l_money(self):
     l_money(self.person2, self.person1, 2)
     self.assertEqual(0, self.person2["monies"])

@@ -25,3 +25,10 @@ def total_money(person):
         total_cash += cash["monies"]
         
     return total_cash
+
+def l_money(loaner, loanee, loan_amount):
+    loaner["monies"] -= loan_amount
+    loanee["monies"] += loan_amount
+    print(loaner["monies"])
+    print(loanee["monies"])
+
