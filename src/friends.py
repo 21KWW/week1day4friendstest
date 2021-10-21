@@ -47,3 +47,5 @@ def find_no_friendends(people):
             no_friends.append(person)
 
     return no_friends
+
+
