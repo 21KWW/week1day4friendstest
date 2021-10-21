@@ -11,3 +11,17 @@ def likes_to_eat(person, snack):
     
     return False
 
+def add_friend(person, new_friend):
+    person["friends"].append(new_friend)
+    print(len(person["friends"]))
+
+def remove_friend(person, old_friend):
+    person["friends"].remove(old_friend)
+    print(len(person["friends"]))
+
+def total_money(person):
+    total_cash = 0
+    for cash in person:
+        total_cash += cash["monies"]
+        
+    return total_cash
